@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/News_Feed/static/js/main.18fa209e.chunk.js",
-    "main.js.map": "/News_Feed/static/js/main.18fa209e.chunk.js.map",
+    "main.js": "/News_Feed/static/js/main.74ddef04.chunk.js",
+    "main.js.map": "/News_Feed/static/js/main.74ddef04.chunk.js.map",
     "runtime-main.js": "/News_Feed/static/js/runtime-main.cbf59311.js",
     "runtime-main.js.map": "/News_Feed/static/js/runtime-main.cbf59311.js.map",
     "static/js/2.31bcdf69.chunk.js": "/News_Feed/static/js/2.31bcdf69.chunk.js",
     "static/js/2.31bcdf69.chunk.js.map": "/News_Feed/static/js/2.31bcdf69.chunk.js.map",
     "index.html": "/News_Feed/index.html",
-    "precache-manifest.1a9a45045b68e1c9831402ebe30fb224.js": "/News_Feed/precache-manifest.1a9a45045b68e1c9831402ebe30fb224.js",
+    "precache-manifest.9112aa3e49b8f6122ceae3b3d4db3f60.js": "/News_Feed/precache-manifest.9112aa3e49b8f6122ceae3b3d4db3f60.js",
     "service-worker.js": "/News_Feed/service-worker.js",
     "static/js/2.31bcdf69.chunk.js.LICENSE": "/News_Feed/static/js/2.31bcdf69.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.cbf59311.js",
     "static/js/2.31bcdf69.chunk.js",
-    "static/js/main.18fa209e.chunk.js"
+    "static/js/main.74ddef04.chunk.js"
   ]
 }
