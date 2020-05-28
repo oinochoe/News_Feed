@@ -24,6 +24,11 @@ const NewsList = ({ category }) => {
         const query = category === 'all' ? '' : `&category=${category}`;
         return axios.get(
             `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=77b22cca25e1454281497e59e5be6992`,
+            {
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                },
+            },
         );
     }, [category]);
 
@@ -44,7 +49,7 @@ const NewsList = ({ category }) => {
     const { articles } = response.data;
     return (
         <NewsListBlock>
-            {articles.map(article => (
+            {articles.map((article) => (
                 <NewsItem key={article.url} article={article} />
             ))}
         </NewsListBlock>
