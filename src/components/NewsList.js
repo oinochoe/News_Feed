@@ -22,9 +22,19 @@ const NewsListBlock = styled.div`
 const NewsList = ({ category }) => {
     const [loading, response, error] = usePromise(() => {
         const query = category === 'all' ? '' : `&category=${category}`;
-        return axios.get(
-            `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=77b22cca25e1454281497e59e5be6992`,
-        );
+        return axios
+            .get(
+                `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=77b22cca25e1454281497e59e5be6992`,
+                {
+                    timeout: 1000,
+                },
+            )
+            .then(function (response) {
+                return response;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
     }, [category]);
 
     // 대기중일때
