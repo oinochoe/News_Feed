@@ -23,7 +23,7 @@ const NewsList = ({ category }) => {
     const [loading, response, error] = usePromise(() => {
         const query = category === 'all' ? '' : `&category=${category}`;
         return axios.get(
-            `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=77b22cca25e1454281497e59e5be6992`,
+            `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=77b22cca25e1454281497e59e5be6992`,
         );
     }, [category]);
 
